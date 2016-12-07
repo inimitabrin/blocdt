@@ -1,0 +1,86 @@
+/* 
+  =====================================================
+  Custom Styles
+  =====================================================
+*/
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 58px;
+}
+
+h3 {
+  font-size: 46px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+/*
+  ======================================================
+  Grid
+  ======================================================
+*/
+
+.one-third, .full, .header {
+  width: 96%;
+  position: relative;
+  margin: 0 2% 20px;
+}
+
+/*
+  ======================================================
+  Media Queries
+  ======================================================
+*/
+
+@media (max-width: 550px) {
+  .one-third, .full {
+    display: block;
+  }
+}
+
+@media (min-width: 700px) {
+  .one-third {
+    width: 16%;
+    display: inline-block;
+  }
+  .full {
+    width: 55%;
+    display: inline-block;
+    margin-top: 50px;
+  }
+  .middle {
+    vertical-align: middle;
+    height: 1024px;
+  }
+  
+.header {
+    width: 14%;
+    display: inline-block;
+  }
+
+  .header-left {
+    float: left;
+  }
+
+  .header-right {
+    float: right;
+  }
+}
